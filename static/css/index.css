@@ -915,3 +915,95 @@ a:focus {
 .results-section * {
   font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+/* Separate result image cards */
+.result-images-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.result-image-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 1.75rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.result-image-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-color);
+}
+
+.result-image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.25rem;
+}
+
+.result-image-card h3 {
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.result-image-card p {
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.result-image-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Results images displayed separately, not as carousel */
+.results-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  overflow: visible;
+  padding: 1rem 0;
+}
+
+.results-carousel .item {
+  margin: 0;
+  overflow: visible;
+  padding: 1.5rem;
+  font-size: initial;
+  background: var(--background-primary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.results-carousel .item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.results-carousel .item img,
+.results-carousel video {
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: auto;
+}
+
+.results-carousel .subtitle {
+  font-size: 1rem !important;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
