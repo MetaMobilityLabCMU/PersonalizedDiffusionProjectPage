@@ -1007,3 +1007,93 @@ a:focus {
   font-weight: 500;
   line-height: 1.6;
 }
+
+.title-hero .publication-affiliations,
+.title-hero .publication-affiliations span,
+.title-hero .publication-affiliations small,
+.title-hero .publication-affiliations sup {
+  font-size: 0.82rem !important;
+  line-height: 1.35 !important;
+}
+
+.main-results-table {
+  width: 65% !important;
+  max-width: 750px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Video result cards in Results section */
+.video-results-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.video-result-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.video-result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.video-result-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.video-result-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.video-row {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.video-row video {
+  width: 32% !important;
+  max-width: 32% !important;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  background: #000;
+}
+
+/* Keep 3 videos in one row even on smaller screens */
+@media screen and (max-width: 768px) {
+  .video-row {
+    flex-direction: row !important;
+    gap: 0.5rem;
+  }
+
+  .video-row video {
+    width: 32% !important;
+    max-width: 32% !important;
+  }
+}
+
+.video-result-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+}
