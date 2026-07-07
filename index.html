@@ -254,27 +254,6 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
@@ -416,7 +395,9 @@
             <b>Main Results</b>
           </h2>
           <img src="static/images/table1.png" alt="First result visualization" class="main-results-table">
-          
+          <h2 class="subtitle has-text-centered">
+            Our model generated accurate target-speed gait for unseen able-bodied subjects and generalized to stroke subjects without fine-tuning, while preserving subject-specific gait patterns.
+          </h2>
         </div>
 
         
@@ -424,7 +405,7 @@
         <div class="video-results-grid">
         
           <div class="video-result-card">
-            <h2>Representative Able-Bodied Subjects</h2>
+            <h2 class="subtitle has-text-centered"><b>Representative Able-Bodied Subjects</b></h2>
         
             <div class="video-row">
               <video autoplay muted loop playsinline controls>
@@ -439,10 +420,11 @@
                 <source src="static/videos/AB27_1.45_1.45_best.mp4" type="video/mp4">
               </video>
             </div>
+            <h2 class="subtitle has-text-centered">Best, median, and worst source-to-target speed pairings for the representative able-bodied subject with median error amongst all subjects.</h2>
           </div>
         
           <div class="video-result-card">
-            <h2>Representative Stroke Subjects</h2>
+            <h2 class="subtitle has-text-centered"><b>Representative Stroke Subjects</b></h2>
         
             <div class="video-row">
               <video autoplay muted loop playsinline controls>
@@ -457,6 +439,7 @@
                 <source src="static/videos/ST13_0.85_0.85_best.mp4" type="video/mp4">
               </video>
             </div>
+            <h2 class="subtitle has-text-centered">Best, median, and worst source-to-target speed pairings for the representative stroke subject with median error amongst all subjects.</h2>
           </div>
         
         </div>
